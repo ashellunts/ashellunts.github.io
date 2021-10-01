@@ -1,0 +1,14 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+ul {
+    list-style-type:none;
+}
+li {
+    margin-bottom: 20px;
+}
+a {
+    text-decoration: none;
+}
