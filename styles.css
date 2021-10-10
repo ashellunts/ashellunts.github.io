@@ -13,5 +13,5 @@ a {
     text-decoration: none;
 }
 p {
-    width: 720px;
+    max-width: 720px;
 }
