@@ -3,9 +3,10 @@
 		<title>Troubleshooting WSL2 installation</title>
 		<link rel="stylesheet" href="../styles.css">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>    
+	</head>
+	<script type="text/javascript" src="./count_visitors.js">
+	</script>
 <body>
-
 	<h1> Troubleshooting WSL2 installation </h1>
 	<p>
 		Installing WSL2 in recent Windows is straightforward. According to documentation running <b>ws2 --install</b> in elevated mode should install WSL2, download recent Ubuntu image and restart the machine. My installation finished without asking for reboot. So I rebooted the machince myself.
@@ -16,6 +17,9 @@
 	<p>
 		Now Ubuntu is in the start menu and can be run from there. Also just invoking <b>wsl</b> from command line will run Ubuntu image (as there is no other images installed).
 	</p>
-
+	<br/>
+	<h5>
+		page visits: <div id="today_page_visits"></div>
+	</h5>
 </body>
 </html>
