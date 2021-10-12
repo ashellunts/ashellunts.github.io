@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Anker Soundcore Mini does not react on volume control from Windows</title>
+		<link rel="stylesheet" href="../styles.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<script type="text/javascript" src="./count_visitors.js">
+	</script>
+<body>
+	<h1>Anker Soundcore Mini does not react on volume control from Windows</h1>
+	<p>
+		Recently I had an issue with Anker Soundcore Mini Bluetooth speaker. Windows volume level was not working with it. Only volume level 0 worked. Any other level just unmuted the speaker.
+	</p> 
+	<p>
+		When changing the volume from the anker it worked and volume on Windows was also changed.
+	</p>
+	<p>
+        Here is how I was able to fix it:
+        <ul>
+            <li>
+                Change the value of <b>HKLM\SYSTEM\ControlSet001\Control\Bluetooth\Audio\AVRCP\CT\DisableAbsoluteVolume</b> to 1
+            </li>
+            <li>
+                Restart Windows
+            </li>
+        </ul>
+	</p>
+    <p>
+        Credits:
+			<a href="http://community.anker.com/t/cant-change-volume-via-windows/66148/4">
+				http://community.anker.com/t/cant-change-volume-via-windows/66148/4
+			</a>
+    </p>
+
+	<h5 style="color:grey;">
+		12 October 2021
+	</h5>
+	<!-- <h5 style="color:grey;">
+		page visits: <div id="today_page_visits"></div>
+	</h5> -->
+</body>
+</html>
