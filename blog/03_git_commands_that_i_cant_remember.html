@@ -16,18 +16,38 @@
 	</p>
 	
 	<p>
-		2. Add remote
+		2. Add remote:
 		<br/>
 		<br/>
 		<i style="margin-left: 20px">> git remote add origin ssh://...</i>
 	</p>
 	
 	<p>
-		3. Revert file to a version from commit
+		3. Revert file to a version from commit:
 		<br/>
 		<br/>
 		<i style="margin-left: 20px">> git checkout abcd-hash -- file/to/restore </i>
 	</p>
+
+	<p>
+		4. Make a patch:
+		<br/>
+		<br/>
+		<i style="margin-left: 20px">> git format-patch -1 HASH </i>
+		<div style="margin-left: 20px">
+			The -1 flag tells Git how many commits should be included in the patch.
+			<br/>
+			<br/>
+			Apply:
+			<br/>
+			<br/>
+			<i>> git am < file.patch </i>
+		</div>
+	</p>
+
+    <p>
+        Credits: <a href="https://stackoverflow.com/a/6658352/1361132">https://stackoverflow.com/a/6658352/1361132</a>
+    </p>
 
 	<h5 style="color:grey;">
 		1 November 2021
