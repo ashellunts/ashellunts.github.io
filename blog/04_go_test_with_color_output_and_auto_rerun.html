@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Go test with color output and auto rerun</title>
+		<link rel="stylesheet" href="../styles.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<script type="text/javascript" src="./count_visitors.js">
+	</script>
+<body>
+	<h1>Go test with color output and auto rerun</h1>
+		<ol>
+			<li>
+				Install and setup <a href="https://stackoverflow.com/a/40160711/1361132">grc</a>, a generic colourizer, for go syntax.
+			</li>
+			<li>
+				Install <a href="https://jvns.ca/blog/2020/06/28/entr/">entr</a>.
+			</li>
+			<li>
+				Run:
+				<br/>
+				<br/>
+				<i style="margin-left: 20px"> > ls *.go | entr -c grc go test .</i>
+				<br/>
+				<br/>
+				"-c" is for cleaning terminal before re-running:
+			</li>
+		</ol>
+	<h5 style="color:grey;">
+		1 November 2021
+	</h5>
+</body>
+</html>
