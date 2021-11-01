@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Docker in WSL2 not working</title>
+		<link rel="stylesheet" href="../styles.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<script type="text/javascript" src="./count_visitors.js">
+	</script>
+<body>
+	<h1>Docker in WSL2 not working</h1>
+	<p>
+		I have recently installed WSL2/Ubuntu. Following general instruction for docker@Ubuntu I had an issue that docker is not working. The problem was that docker service was not running. systemctl is not available in WSL2, so you need to use init.d:
+		<br/>
+		<br/>
+		<i style="margin-left: 20px">> sudo /etc/init.d/docker start</i>
+	</p>
+	<h5 style="color:grey;">
+		1 November 2021
+	</h5>
+</body>
+</html>
