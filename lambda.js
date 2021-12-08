@@ -16,7 +16,7 @@ exports.handler = async (event) => {
         statusCode: 200,
         headers: {
             //"Access-Control-Allow-Origin" : "*"
-            "Access-Control-Allow-Origin" : "ashellunts.github.io"
+            "Access-Control-Allow-Origin" : "https://ashellunts.github.io"
         },
         body: JSON.stringify(responseBody),
     };
