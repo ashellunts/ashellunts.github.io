@@ -2,7 +2,7 @@
 	<head>
 		<title>GIT commands that I can't remember</title>
 		<link rel="stylesheet" href="../styles.css">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<script type="text/javascript" src="./count_visitors.js">
 	</script>
@@ -12,28 +12,28 @@
 		1. When working with shell scripts on Windows if you want to add executable permission to it:
 		<br/>
 		<br/>
-		<i style="margin-left: 20px">> git update-index --chmod=+x path/to/file</i>
+		<samp style="margin-left: 20px">$ git update-index --chmod=+x path/to/file</samp>
 	</p>
 
 	<p>
 		2. Add remote:
 		<br/>
 		<br/>
-		<i style="margin-left: 20px">> git remote add origin ssh://...</i>
+		<samp style="margin-left: 20px">$ git remote add origin ssh://...</samp>
 	</p>
 
 	<p>
 		3. Revert file to a version from commit:
 		<br/>
 		<br/>
-		<i style="margin-left: 20px">> git checkout abcd-hash -- file/to/restore </i>
+		<samp style="margin-left: 20px">$ git checkout abcd-hash -- file/to/restore </samp>
 	</p>
 
 	<p>
-		4. Make a patch:
+		4. Make a patch. <a href="https://stackoverflow.com/a/6658352/1361132">link</a>
 		<br/>
 		<br/>
-		<i style="margin-left: 20px">> git format-patch -1 HASH </i>
+		<samp style="margin-left: 20px">$ git format-patch -1 HASH</samp>
 		<div style="margin-left: 20px">
 			The -1 flag tells Git how many commits should be included in the patch.
 			<br/>
@@ -41,7 +41,7 @@
 			Apply:
 			<br/>
 			<br/>
-			<i>> git am < file.patch </i>
+			<samp>$ git am < file.patch </samp>
 		</div>
 	</p>
 
@@ -49,12 +49,19 @@
 		5. Work with stash: <a href="https://stackoverflow.com/a/15197232">https://stackoverflow.com/a/15197232</a>
 	</p>
 
-    <p>
-        Credits: <a href="https://stackoverflow.com/a/6658352/1361132">https://stackoverflow.com/a/6658352/1361132</a>
-    </p>
+	<p>
+		6. Reset author for last N commits. <a href="https://stackoverflow.com/a/15197232">link</a>
+		<div style="margin-left: 20px">
+			<samp>
+				git rebase -i YOUR_SHA -x "git commit --amend --reset-author -CHEAD"
+			</samp>
+		</div>
+	</p>
 
 	<h5 style="color:grey;">
-		1 November 2021
+		created: 1 Nov 2021
+		<br/>
+		updated: 9 Feb 2023
 	</h5>
 </body>
 </html>
